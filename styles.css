@@ -214,6 +214,7 @@ h1 {
   column-gap: var(--s8); row-gap: var(--s2);
   border-top: 2px solid var(--text); padding-top: var(--s4);
 }
+.feature + .feature { margin-top: var(--s8); }
 .feature__status { grid-column: 1; margin: 0; color: var(--red-ink); font-weight: 600; }
 .feature h3 { grid-column: 1; font-size: clamp(1.75rem, 3.4vw, 2.5rem); font-weight: 600; line-height: 1.05; }
 .feature__desc { grid-column: 2; grid-row: 1 / span 2; color: var(--muted); font-size: 1.1875rem; margin: 0; max-width: 56ch; }
