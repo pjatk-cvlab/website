@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Computer Vision Lab PJATK — Koło Naukowe Wizji Komputerowej</title>
+  <meta name="description" content="Koło Naukowe Wizji Komputerowej na Polsko-Japońskiej Akademii Technik Komputerowych. Projekty, warsztaty i spotkania z computer vision.">
+  <meta name="theme-color" content="#EB2229">
+  <meta property="og:title" content="Computer Vision Lab PJATK">
+  <meta property="og:description" content="Koło Naukowe Wizji Komputerowej na PJATK.">
+  <meta property="og:image" content="assets/og-avatar.png">
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;600&family=Onest:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#o-nas">Przejdź do treści</a>
+
+  <header class="nav">
+    <div class="container nav__inner">
+      <a href="#" class="logo" aria-label="Computer Vision Lab PJATK — strona główna">
+        <picture>
+          <source srcset="assets/cvlab-logo-dark.png" media="(prefers-color-scheme: dark)">
+          <img src="assets/cvlab-logo.png" alt="" width="590" height="234">
+        </picture>
+      </a>
+      <button class="nav__toggle" aria-expanded="false" aria-controls="menu" aria-label="Otwórz menu">
+        <span></span><span></span>
+      </button>
+      <nav id="menu" class="nav__menu" aria-label="Główna nawigacja">
+        <a href="#o-nas">O nas</a>
+        <a href="#tematy">Tematy</a>
+        <a href="#projekty">Projekty</a>
+        <a href="#spotkania">Spotkania</a>
+        <a href="#kontakt">Kontakt</a>
+        <a href="#dolacz" class="btn btn--small">Dołącz</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero__inner">
+        <div class="hero__text">
+          <a href="#dolacz" class="status"><span class="status__dot" aria-hidden="true"></span>Rejestracja otwarta</a>
+          <p class="hero__kicker">Koło naukowe Polsko-Japońskiej Akademii Technik Komputerowych</p>
+          <h1>Uczymy maszyny widzieć</h1>
+          <p class="lead">
+            Computer Vision Lab skupia studentów zainteresowanych sztuczną inteligencją,
+            przetwarzaniem obrazu i praktycznym wykorzystaniem nowoczesnych technologii.
+            Stawiamy przede wszystkim na praktykę.
+          </p>
+          <div class="actions">
+            <a href="https://forms.gle/n1SGLsB4VDQutJhs5" class="btn btn--light" target="_blank" rel="noopener">Wypełnij formularz</a>
+            <a href="#spotkania" class="btn btn--outline-light">Najbliższe spotkania</a>
+          </div>
+        </div>
+
+        <div class="eye-wrap" aria-hidden="true">
+          <svg class="eye" viewBox="-370 -370 740 740">
+            <g class="rays">
+              <polygon class="ray" style="--d:4" points="-230.7,-150.5 -298.2,-189.5 -313.2,-163.5 -245.7,-124.5"/>
+              <polygon class="ray" style="--d:3" points="-169.0,-190.2 -239.0,-260.2 -260.2,-239.0 -190.2,-169.0"/>
+              <polygon class="ray" style="--d:2" points="-106.5,-214.5 -163.5,-313.2 -189.5,-298.2 -132.5,-199.5"/>
+              <polygon class="ray" style="--d:1" points="-45.0,-226.0 -76.9,-344.9 -105.9,-337.1 -74.0,-218.3"/>
+              <polygon class="ray" style="--d:0" points="15.0,-227.0 15.0,-353.0 -15.0,-353.0 -15.0,-227.0"/>
+              <polygon class="ray" style="--d:1" points="74.0,-218.3 105.9,-337.1 76.9,-344.9 45.0,-226.0"/>
+              <polygon class="ray" style="--d:2" points="132.5,-199.5 189.5,-298.2 163.5,-313.2 106.5,-214.5"/>
+              <polygon class="ray" style="--d:3" points="190.2,-169.0 260.2,-239.0 239.0,-260.2 169.0,-190.2"/>
+              <polygon class="ray" style="--d:4" points="245.7,-124.5 313.2,-163.5 298.2,-189.5 230.7,-150.5"/>
+              <polygon class="ray" style="--d:4" points="-245.7,124.5 -313.2,163.5 -298.2,189.5 -230.7,150.5"/>
+              <polygon class="ray" style="--d:3" points="-190.2,169.0 -260.2,239.0 -239.0,260.2 -169.0,190.2"/>
+              <polygon class="ray" style="--d:2" points="-132.5,199.5 -189.5,298.2 -163.5,313.2 -106.5,214.5"/>
+              <polygon class="ray" style="--d:1" points="-74.0,218.3 -105.9,337.1 -76.9,344.9 -45.0,226.0"/>
+              <polygon class="ray" style="--d:0" points="-15.0,227.0 -15.0,353.0 15.0,353.0 15.0,227.0"/>
+              <polygon class="ray" style="--d:1" points="45.0,226.0 76.9,344.9 105.9,337.1 74.0,218.3"/>
+              <polygon class="ray" style="--d:2" points="106.5,214.5 163.5,313.2 189.5,298.2 132.5,199.5"/>
+              <polygon class="ray" style="--d:3" points="169.0,190.2 239.0,260.2 260.2,239.0 190.2,169.0"/>
+              <polygon class="ray" style="--d:4" points="230.7,150.5 298.2,189.5 313.2,163.5 245.7,124.5"/>
+            </g>
+            <clipPath id="lens-clip">
+              <path d="M-348 0C-250-120-130-193 0-193S250-120 348 0C250 120 130 193 0 193S-250 120-348 0Z"/>
+            </clipPath>
+            <path class="lens" d="M-348 0C-250-120-130-193 0-193S250-120 348 0C250 120 130 193 0 193S-250 120-348 0Z"/>
+            <g clip-path="url(#lens-clip)">
+              <g class="iris" id="iris">
+                <circle r="138"/>
+                <path class="star" d="M0-102L14-64Q28-28 64-14L102 0 64 14Q28 28 14 64L0 102-14 64Q-28 28-64 14L-102 0-64-14Q-28-28-14-64Z"/>
+              </g>
+            </g>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- O NAS -->
+    <section id="o-nas" class="section">
+      <div class="container about">
+        <div class="about__text">
+          <h2>O nas</h2>
+          <p>
+            Głównym celem koła jest umożliwienie studentom bezpośredniego uczestnictwa w badaniach
+            nad AI oraz rozwijania praktycznych umiejętności przez realizację własnych projektów
+            przy wsparciu merytorycznym.
+          </p>
+          <p>
+            Chcemy wspólnie rozwijać pomysły, zdobywać nowe umiejętności i realizować projekty,
+            w których wiedza ze studiów trafia do rzeczywistych zastosowań. Przygotowujemy publikacje
+            naukowe, prezentujemy wyniki badań na konferencjach i bierzemy udział w konkursach.
+          </p>
+        </div>
+        <aside class="signup" aria-labelledby="signup-title">
+          <h3 id="signup-title">Rejestracja jest otwarta</h3>
+          <p>W Computer Vision Lab możesz:</p>
+          <ul class="checks">
+            <li>zdobywać praktyczne doświadczenie w pracy z AI,</li>
+            <li>uczestniczyć w projektach badawczych,</li>
+            <li>rozwijać umiejętności programistyczne i techniczne,</li>
+            <li>poznawać osoby o podobnych zainteresowaniach,</li>
+            <li>dzielić się wiedzą i realizować własne pomysły.</li>
+          </ul>
+          <a href="https://forms.gle/n1SGLsB4VDQutJhs5" class="btn" target="_blank" rel="noopener">Wypełnij formularz</a>
+        </aside>
+      </div>
+    </section>
+
+    <!-- TEMATY -->
+    <section id="tematy" class="section section--rule">
+      <div class="container">
+        <h2>Czym się zajmujemy</h2>
+        <ul class="topics">
+          <li>
+            <h3>Interaktywne systemy AI w czasie rzeczywistym</h3>
+            <p>Systemy wizyjne, które analizują obraz na bieżąco i od razu reagują na to, co widzą.</p>
+          </li>
+          <li>
+            <h3>Asystenci dla osób z niepełnosprawnościami</h3>
+            <p>Inteligentne narzędzia, które pomagają w codziennym funkcjonowaniu.</p>
+          </li>
+          <li>
+            <h3>Obrazy i dane 3D w medycynie</h3>
+            <p>Analiza obrazów medycznych i danych trójwymiarowych.</p>
+          </li>
+        </ul>
+        <div class="fields">
+          <h3>Obszary działalności</h3>
+          <ul class="tags">
+            <li>Computer Vision i analiza obrazu</li>
+            <li>Deep Learning i sieci neuronowe</li>
+            <li>Edge AI</li>
+            <li>Projekty badawczo-rozwojowe</li>
+            <li>Warsztaty i prezentacje studenckie</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJEKTY -->
+    <section id="projekty" class="section section--rule">
+      <div class="container">
+        <h2>Projekty</h2>
+        <p class="section__lead">Projekt, który planujemy. Chcesz pracować nad nim od początku? Dołącz do zespołu.</p>
+        <article class="feature">
+          <p class="feature__status">W planach</p>
+          <h3>Nawigacja bez GPS</h3>
+          <p class="feature__desc">
+            System nawigacji dla łazika planetarnego oraz do pracy w trudnych warunkach na Ziemi,
+            tam gdzie sygnał GPS jest niedostępny. Położenie i trasa są wyznaczane na podstawie obrazu z kamer.
+          </p>
+          <ul class="tags" aria-label="Zagadnienia"><li>Odometria wizualna</li><li>SLAM</li><li>Fuzja z IMU</li></ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- SPOTKANIA -->
+    <section id="spotkania" class="section section--tint">
+      <div class="container">
+        <h2>Spotkania</h2>
+        <div class="schedule">
+          <p class="schedule__when">Każdy piątek, <time datetime="17:30">17:30</time></p>
+          <div class="schedule__info">
+            <p class="schedule__where">Sala A/357, PJATK, ul. Koszykowa 86</p>
+            <p>Zapraszamy zarówno osoby z doświadczeniem, jak i te, które dopiero zaczynają przygodę z AI.</p>
+          </div>
+        </div>
+
+        <h3 class="events__title">Najbliższe wydarzenia</h3>
+        <ol class="events">
+          <li class="event" data-date="2026-12-04">
+            <time datetime="2026-12-04T17:30"><b>4</b> gru</time>
+            <div>
+              <p class="event__type">Warsztaty</p>
+              <h4>Budowa systemu wizyjnego z ROS 2 i sieciami neuronowymi</h4>
+              <p>Praktyczne warsztaty z budowy systemu wizyjnego. Piątek, 17:30, sala A/357.</p>
+            </div>
+          </li>
+          <li class="event" data-date="2026-12-11">
+            <time datetime="2026-12-11T17:30"><b>11</b> gru</time>
+            <div>
+              <p class="event__type">Wykład otwarty</p>
+              <h4>Tomografia komputerowa: zarys metodyki i pomiaru</h4>
+              <p>Jak tomografia komputerowa wykorzystuje przetwarzanie obrazu, żeby odkryć wewnętrzną strukturę obiektów i stworzyć ich trójwymiarowe rekonstrukcje. Piątek, 17:30, sala A/357.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- KONTAKT -->
+    <section id="kontakt" class="section">
+      <div class="container">
+        <h2>Kontakt</h2>
+        <dl class="contacts">
+          <div><dt>Koło</dt><dd><a href="mailto:cvlab@pjwstk.edu.pl">cvlab@pjwstk.edu.pl</a></dd></div>
+          <div><dt>Opiekun naukowy</dt><dd><a href="mailto:ilesz@pjwstk.edu.pl">ilesz@pjwstk.edu.pl</a></dd></div>
+          <div><dt>Opiekun społeczności studenckiej</dt><dd><a href="mailto:s307170@pjwstk.edu.pl">s307170@pjwstk.edu.pl</a></dd></div>
+          <div><dt>Discord</dt><dd><a href="https://discord.gg/9G6GWTFc3" target="_blank" rel="noopener">discord.gg/9G6GWTFc3</a></dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- DOŁĄCZ -->
+    <section id="dolacz" class="join">
+      <div class="container join__inner">
+        <img class="join__badge" src="assets/og-avatar.png" alt="" width="1000" height="1000" loading="lazy">
+        <div>
+          <h2>Dołącz do Computer Vision Lab</h2>
+          <p class="join__status"><span class="status__dot" aria-hidden="true"></span>Rejestracja jest otwarta</p>
+          <p>Twórz z nami projekty, zdobywaj doświadczenie i odkrywaj możliwości sztucznej inteligencji. Być może Twój pomysł stanie się naszym kolejnym wspólnym projektem.</p>
+          <div class="actions">
+            <a href="https://forms.gle/n1SGLsB4VDQutJhs5" class="btn" target="_blank" rel="noopener">Wypełnij formularz zgłoszeniowy</a>
+            <a href="https://discord.gg/9G6GWTFc3" class="btn btn--outline-light" target="_blank" rel="noopener">Dołącz na Discordzie</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <picture>
+        <source srcset="assets/cobrand-dark.png" media="(prefers-color-scheme: dark)">
+        <img class="footer__cobrand" src="assets/cobrand.png" alt="Polsko-Japońska Akademia Technik Komputerowych i Computer Vision Lab PJATK" width="1672" height="249" loading="lazy">
+      </picture>
+      <div class="footer__meta">
+        <p>© <span id="year">2026</span> Computer Vision Lab, Koło Naukowe Wizji Komputerowej PJATK</p>
+        <p>ul. Koszykowa 86, Warszawa</p>
+        <p>Logo: Olga Kulish</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
